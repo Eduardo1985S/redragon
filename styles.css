@@ -1,0 +1,172 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Rolagem suave */
+
+}
+
+.header {
+    position: fixed;
+    width: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+/* Cores diferentes para cada seção */
+#section1 {
+    /* background-color: #FF5733; Laranja */
+    background-image: url('./wallpaper/principal.jpg');
+    /* Caminho da imagem de fundo */
+    background-size: cover;
+    /* Ajusta a imagem para cobrir toda a área da seção */
+    background-position: center;
+    /* Centraliza a imagem de fundo */
+    background-attachment: fixed;
+    /* Mantém a imagem fixa para o efeito parallax */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+    min-height: 100vh;
+    /* Garante que a seção ocupe a altura total da tela */
+
+
+}
+
+#section2 {
+    background-color: #830000;/* Verde claro */
+
+
+}
+
+#section3 {
+    background-color: #3357FF;/* Azul */
+}
+
+#section4 {
+    background-color: #FF33A1;/* Rosa */
+}
+
+#section5 {
+    background-color: #FF9933;/* Laranja escuro */
+}
+
+#section6 {
+    background-color: #00a59d;/* Ciano */
+}
+
+#section7 {
+    background-color: #8A33FF; /* Roxo */
+    min-height: auto; /* Permite que a altura seja ajustada ao conteúdo */
+    height: 70vh; /* Se você deseja uma altura específica */
+}
+
+/* Botão de Rolar para o Topo */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;/* Inicialmente escondido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-to-top:hover {
+    background-color: #555555;
+}
+
+.footer {
+    /* background: #a52b2b; */
+    background-image: url('./img/1.jpg');
+    background-size: cover;
+    /* Ajusta a imagem para cobrir toda a área da seção */
+    background-position: center;
+    /* Centraliza a imagem de fundo */
+    background-attachment: fixed;
+    /* Mantém a imagem fixa para o efeito parallax */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+    
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+.nav-dots {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    /* Certifica-se de que os pontos fiquem acima de outros elementos */
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    /* Cor dos pontos */
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    text-decoration: none;
+}
+
+.dot:hover {
+    opacity: 5;
+    /* Torna o ponto mais visível quando o usuário passa o mouse */
+}
